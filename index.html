@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDV Calculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+    <div class="header">
+        <h1>Vergi Hesaplama</h1>
+        <h3>Vergi oranını seçiniz..</h3>
+    </div>
+    <!-- Tax Rate Buttons -->
+    <div class="btn-rate">
+        <button class="percent" id="first-btn" value="%1">%1</button>
+        <button class="percent">%10</button>
+        <button class="percent">%20</button>
+        <button class="percent" id="last-btn">Yüzde Gir</button>
+    </div>
+    <!-- Tax Rate Inpu Area -->
+    <div class="taxes">
+        <div class="taxes-container">
+            <div class="tax-rate">
+                <label for="tax-rate">Vergi Oranı:</label>
+                <input class="taxRatio" name="tax-rate" type="text">
+            </div>
+            <div class="cost">
+                <label for="cost">Tutar:</label>
+                <input class="costTax" name="cost" type="text">
+            </div>
+        </div>
+    </div>
+    <!-- Tax Excluded & Inculded Area -->
+    <div class="tax-free">
+        <button class="" id="tax-free-btn">Vergi Hariç</button>
+        <button id="include-tax-btn">Vergi Dahil</button>
+    </div>
+    <!-- Result Area -->
+    <div class="all-result">
+        <div class="subtotal">
+            <label for="tax-rate">Ara Toplam:</label>
+            <input class="subtotalInput" name="tax-rate" type="text" placeholder="&#8378 0,00" disabled>
+        </div>
+        <div class="result-tax-result">
+            <label for="cost">Vergi:</label>
+            <input class="tax" name="cost" type="text" placeholder="&#8378 0,00" disabled>
+        </div>
+        <div class="result">
+            <label for="resultValue">Genel Toplam:</label>
+            <input class="total" name="resultValue" type="text" placeholder="&#8378 0,00" disabled>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    margin-top: 10px;
+    border: 5px solid slategray;
+    -webkit-box-shadow: 14px 47px 61px -7px rgba(0,0,0,0.52);
+    -moz-box-shadow: 14px 47px 61px -7px rgba(0,0,0,0.52);
+    box-shadow: 14px 47px 61px -7px rgba(0,0,0,0.52);
+}
+
+
+/* header */
+h1{
+    background-color: rgb(0, 32, 175);
+    width: 800px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 100;
+}
+h3{
+    margin-left: 180px;
+}
+
+/* Rate buttons */
+.btn-rate{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+    align-self: start;
+}
+
+.btn-rate > button{
+    padding: 2px 30px;
+    background-color: white;
+    border-color: rgb(251, 255, 0);
+    border-style:solid;
+    font-size: large;
+    color: rgb(194, 181, 1);  
+}
+.btn-rate > button:hover{
+    background-color:rgb(255, 187, 0); 
+    cursor: pointer;
+    color: white;
+    border-style: none;
+}
+
+#first-btn{
+    border-radius: 10px 0 0 10px;
+}
+#last-btn{
+    border-radius: 0px 10px 10px 0px;
+}
+/* tax rate Cost Area */
+.taxes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.taxes-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+}
+
+.tax-rate{
+    display: flex;
+    font-size: large;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.cost{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large;
+    margin-left: 45px;
+}
+/* Tax Free-Include Buttons Area */
+.tax-free{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+    align-self: start;
+}
+
+.tax-free> button{
+    padding: 5px 30px;
+    background-color: transparent;
+    border-color: rgb(0, 183, 255);
+    border-style:solid;
+    color: rgb(1, 101, 194);  
+}
+.tax-free> button:hover{
+    background-color:rgb(0, 183, 255);
+    cursor: pointer;
+    color: white;
+    border-style: solid;
+}
+#tax-free-btn{
+    border-radius: 10px 0 0 10px;
+}
+#include-tax-btn{
+    border-radius: 0px 10px 10px 0px;
+}
+
+/* Result Area */
+
+.all-result{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 126, 199);
+    justify-content: space-around;
+    color: aliceblue;
+    font-size: x-large;
+    height: 200px;
+    width: 100%;
+}
+
+.subtotal{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.result-tax-result{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left:60px ;
+}
+.result{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -20px;
+}
+
+.all-result input{
+    background-color: transparent;
+    color: white;
+    border: 0px solid;
+    font-size: 30px;
+    text-align: center;
+    outline: none;
+}
+.all-result input::placeholder{
+    color: white;
+}
+
+.active{
+    background-color: rgb(255, 187, 0) !important;
+    color: white !important;
+    border: none !important;
+}
+
+.selected{
+    background-color: rgb(0, 183, 255) !important;
+    color: white !important;
+    border: rgb(1, 101, 194) !important;
+}
+
+
+
